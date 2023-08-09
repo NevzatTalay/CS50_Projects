@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PORTFOLIO
+{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+
+            <th>SYMBOL</th>
+            <th>NAME</th>
+            <th>SHARES</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for index in indexed %}
+            <tr>
+                <td>{{ index.symbol }}</td>
+                <td>{{ index.name }}</td>
+                <td>{{ index.shares }}</td>
+                <td>{{ index.price  | usd}}</td>
+                <td>{{ index.trans  | usd}}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>Cash: </b></td>
+            <td>{{ bakiye | usd}}</td>
+        </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b>TOTAL: </b></td>
+                <td>{{ sum | usd}}</td>
+            </tr>
+    </tbody>
+
+</table>
+
+{% endblock %}

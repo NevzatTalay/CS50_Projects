@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    HISTORY
+{% endblock %}
+
+{% block main %}
+<table>
+    <thead>
+        <tr>
+
+            <th>SYMBOL</th>
+            <th>SHARES</th>
+            <th>PRICE</th>
+            <th>TYPE</th>
+            <th>TRANSACTED</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for hist in personal_hist %}
+            <tr>
+                <td>{{ hist.symbol }}</td>
+                <td>{{ hist.shares }}</td>
+                <td>{{ hist.price}}</td>
+                <td>{{ hist.type }}</td>
+                <td>{{ hist.transacted }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,49 @@
+export API_KEY=pk_c1f245431e9f4f0b86bc4846ba560018
+https://cloud.iexapis.com/stable/stock/MSFT/quote?token=pk_c1f245431e9f4f0b86bc4846ba560018
+select * from stocks;
+
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(345, "NTFX", "Netflix Inc.", 4, 242.12);
+
+CREATE TABLE stocks (
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+        user_id INTEGER NOT NULL,
+        symbol TEXT NOT NULL,
+        name TEXT NOT NULL,
+        shares INTEGER NOT NULL,
+        price INTEGER NOT NULL,
+        trans REAL AS (shares*price) STORED
+);
+
+UPDATE stocks set shares = 5 WHERE user_id =345 AND symbol='NTFX';
+
+UPDATE stocks SET shares =  shares + 1 WHERE user_id= 357 AND symbol='MSFT';
+
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(345, "NTFX", "Netflix Inc.", 5, 242.12);
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(357, "NTFX", "Netflix Inc.", 6, 242.12);
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(359, "MSFT", "Netflix Inc.", 7, 242.12);
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(357, "MSFT", "Netflix Inc.", 9, 242.12);
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(357, "INTC", "Intel Corp.", 2, 26.97);
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(357, "INTC", "Cintas Corporation", 14, 5187.94);
+INSERT INTO stocks (user_id, symbol, name, shares, price) VALUES(357, "NFLX", "Netflix Inc.", 2, 0.569999999999936);
+
+
+CREATE TABLE history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+        user_id INTEGER NOT NULL,
+        symbol TEXT NOT NULL,
+        shares INTEGER NOT NULL,
+        price INTEGER NOT NULL,
+        type TEXT NOT NULL,
+        transacted TEXT NOT NULL
+);
+
+
+
+calc TEXT AS (shares*price) STORED
+
+
+
+
+
+
+db.execute("SELECT SUM(trans) FROM stocks WHERE user_id=?;")

@@ -1,0 +1,10 @@
+1. Include Libraries (stdio and cs50)
+    a. cs50 is required to get input
+    b. stdio is required for other standard operations
+2. Add the abstractions of your custom functions if any.
+3. Create your void main function
+4. Ask user for an height? to make it user friendly, indicate that it should be between 1-8.
+5. create a for double for loop one in other's inside.
+    a. İnclude inner printf function which insert each # symbol.
+    b. Insert outer printf function which insert new line (\n) symbol.
+    c. Connect the height input taken from user to the outer loop.

@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: sort1 is not the fastest so it can not be merge sort. Also, it takes longer in "reversed50000.txt". Bubble sort should take more time in reversed than the randomized data.
+
+sort2 uses: Merge Sort
+
+How do you know?: It is the fastest. Also, when I increased the number of elements the sorting time didn't increase dramatically unlike the others. I bet it fits into nlog(n) distribution.
+
+sort3 uses: Selection Sort
+
+How do you know?: It is the remainder. But the key is to have approximately same time on each of them.

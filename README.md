@@ -1,4 +1,4 @@
-![alt text](http://www.github.com/NevzatTalay/CS50_Projects/blob/main/CaptionImage.png) 
+![alt text](http://github.com/NevzatTalay/CS50_Projects/blob/main/CaptionImage.png) 
 # CS50_Projects
 This is the entire documentation of the CS50 course from Edx &amp; Harvard University including all the submission throughout the course.
 

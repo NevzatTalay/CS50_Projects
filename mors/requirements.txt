@@ -1,0 +1,11 @@
+cs50
+Flask
+Flask-Session
+requests
+datetime
+SQL
+qrcode
+pillow
+PyQRCode
+pypng
+cv2

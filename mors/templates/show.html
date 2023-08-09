@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block title %}
+PORTFOLIO
+{% endblock %}
+
+{% block main %}
+
+
+
+
+<br> <br>
+<div id="line" class="row justify-content-md-center">
+    <div class="col col-lg-6">
+        <a href="#" onclick="getIndex(this)" id="K1LINK" type="button" class="btn btn-primary btn-lg col-6">Description Document</a>
+    </div>
+    <div class="col-md-auto">
+        <img src="../static/{{ k1 }}" width="40" height="40">
+    </div>
+</div>
+<div id="line" class="row justify-content-md-center">
+    <div class="col col-lg-6">
+        <a href="#" onclick="getIndex(this)" id="K2LINK"  type="button" class="btn btn-secondary btn-lg col-6">User Manual</a>
+    </div>
+    <div class="col-md-auto">
+        <img src="../static/{{ k2 }}" width="40" height="40">
+    </div>
+</div>
+<div id="line" class="row justify-content-md-center">
+    <div class="col col-lg-6">
+        <a href="#" onclick="getIndex(this)" id="K3LINK" type="button" class="btn btn-success btn-lg col-6">Warranty Document</a>
+    </div>
+    <div class="col-md-auto">
+        <img src="../static/{{ k3 }}" width="40" height="40">
+    </div>
+</div>
+<div id="line" class="row justify-content-md-center">
+    <div class="col col-lg-6">
+
+        <a href="#" onclick="getIndex(this)" id="K4LINK" type="button" class="btn btn-danger btn-lg col-6">Additional Document 1</a>
+    </div>
+    <div class="col-md-auto">
+        <img src="../static/{{ k4 }}" width="40" height="40">
+    </div>
+</div>
+<div id="line" class="row justify-content-md-center">
+    <div class="col col-lg-6">
+        <a href="#" onclick="getIndex(this)" id="K5LINK" type="button" class="btn btn-warning btn-lg col-6">Additional Document 2</a>
+    </div>
+    <div class="col-md-auto">
+        <img src="../static/{{ k5 }}" width="40" height="40">
+    </div>
+</div>
+<div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<form id="dummyForm" method="post">
+    <input type="hidden" autocomplete="off" id="orderkanban" name="orderkanban" placeholder="orderkanban" type="text"
+        value="a">
+</form>
+
+<script>
+    function getIndex(x) {
+        defvalue = x.getAttribute("id");
+        document.getElementById("orderkanban").setAttribute("value", defvalue);
+        document.getElementById("dummyForm").submit();
+    }
+</script>
+
+
+{% endblock %}

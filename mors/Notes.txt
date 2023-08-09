@@ -1,0 +1,132 @@
+Link Type: chopsticks56-code50-10831367-96q6q9p7c7qgq-5000.preview.app.github.dev/?mach_id=1234
+
+CREATE TABLE kex(
+   MACH_ID   	INTEGER PRIMARY KEY AUTOINCREMENT,
+   K1		INT	 NOT NULL,
+   K2		INT	 NOT NULL,
+   K3		INT	 NOT NULL,
+   K4		INT	 NOT NULL,
+   K5		INT	 NOT NULL
+);
+
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (1, 1, 1,1,1,1);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (2, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (3, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (4, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (5, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (6, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (7, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (8, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (9, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (10, 0, 0,0,0,0);
+INSERT INTO kex (MACH_ID, K1, K2, K3, K4, K5) VALUES (11, 0, 0,0,0,0);
+
+CREATE TABLE machList(
+   MACH_ID   	   INTEGER PRIMARY KEY AUTOINCREMENT,
+   LOCATION		   TEXT	 NOT NULL,
+   BRAND		      TEXT	 NOT NULL,
+   FUNCTION		   TEXT	 NOT NULL,
+   STATUS		TEXT	 NOT NULL,
+   PRODUCTNAME		TEXT	 NOT NULL
+);
+
+
+
+
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (1,"House 1","XIAOMI","Scale","Active","Smart Scale for Houses");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (2,"House 2","ASUS","Computer","Active","ASUS ROG GTX 750M Laptop");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (3,"House 2","SONY","Television","Active","Home Television");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (4,"House 1","SAMSUNG","Phone","Active","Smartphone for Job");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (5,"House 2","XIAOMI","Sensor","Passive","Smart Humidity and Temperature Sensor");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (6,"House 1","DELL","Computer","Passive","Dell Vostro 3510 N8004VN3510EMEA01N i5-1135 Notebook");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (7,"House 2","MICROSOFT","Keyboard","Active","Wireless Keyboard For Personal Use");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (8, "House 2","MICROSOFT","Keyboard","Active","Wireless Keyboard For Personal Use");
+INSERT INTO machList (MACH_ID, LOCATION, BRAND, FUNCTION, STATUS, PRODUCTNAME) VALUES (9, "House 2","MICROSOFT","Keyboard","Active","Wireless Keyboard For Personal Use");
+
+
+
+
+UPDATE kex SET K1 = 0 WHERE MACH_ID = 11;
+UPDATE kex SET K2 = 0 WHERE MACH_ID = 11;
+UPDATE kex SET K3 = 0 WHERE MACH_ID = 11;
+UPDATE kex SET K4 = 0 WHERE MACH_ID = 11;
+UPDATE kex SET K5 = 0 WHERE MACH_ID = 11;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE kexextended(
+   MACH_ID   	INT      NOT NULL,
+   K1		INT	 NOT NULL,
+   K2		INT	 NOT NULL,
+   K3		INT	 NOT NULL,
+   K4		INT	 NOT NULL,
+   K5		INT	 NOT NULL,
+   K1LINK TEXT(20) DEFAULT NULL,
+	K2LINK TEXT(20) DEFAULT NULL,
+	K3LINK TEXT(20) DEFAULT NULL,
+	K4LINK TEXT(20) DEFAULT NULL,
+	K5LINK TEXT(20) DEFAULT NULL,
+   PRIMARY KEY (MACH_ID)
+);
+
+INSERT INTO kexextended (MACH_ID, K1, K2, K3, K4, K5, K1LINK, K2LINK ,K3LINK, K4LINK, K5LINK) VALUES (222222, 1, 1,1, 0, 0, "https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/");
+INSERT INTO kexextended (MACH_ID, K1, K2, K3, K4, K5,K1LINK,K2LINK,K3LINK,K4LINK,K5LINK) VALUES (333333, 1, 0,0,0,0,"https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/");
+INSERT INTO kexextended (MACH_ID, K1, K2, K3, K4, K5,K1LINK,K2LINK,K3LINK,K4LINK,K5LINK) VALUES (444444, 1, 1,1,1,1,"https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/","https://www.google.com.tr/");

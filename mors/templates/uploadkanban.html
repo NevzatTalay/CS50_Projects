@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+PORTFOLIO
+{% endblock %}
+
+{% block main %}
+<div class="page-header">
+    <h1> Upload Your Document </h1>
+</div>
+
+
+<form action="/uploadkanban" method="post" enctype="multipart/form-data">
+    <label class="col-4 col-form-label" for="file_type">Add Document ID</label>
+    <input type="text" class="form-control mx-auto w-auto" id="machine_id2" name="machine_id2" placeholder="ID">
+    <br><br>
+    <label class="col-4 col-form-label" for="file_type2">Select Document Type</label>
+    <select id="file_type2" name="file_type2" class="form-control mx-auto w-auto">
+        <option value="K1LINK">Description Document</option>
+        <option value="K2LINK">User Manual</option>
+        <option value="K3LINK">Warranty Document</option>
+        <option value="K4LINK">Additional Document 1</option>
+        <option value="K5LINK">Additional Document 2</option>
+    </select>
+    <br><br>
+    <input type="file" id="files" name="files" multiple="multiple" />
+    <br><br>
+    <input type="submit" class="btn btn-lg btn-primary" />
+    <br>
+</form>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+#randombutton {
+    min-height: 200px;
+}
+
+.caption {
+    color: blue;
+}
+
+.caption2 {
+    color: blue;
+}
+
+#programmes,
+#programmes2 {
+    color: red;
+}
+
+a[href*="europa.eu"] {
+    color: #83b348;
+    /* Envato green */
+}
+
+td {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: red;
+}
